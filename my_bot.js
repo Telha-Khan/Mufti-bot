@@ -22,21 +22,21 @@ client.on('ready',  () => {
           const member = message.mentions.members.first()
           if (!member) {
             return message.reply(
-              `Who are you trying to kick? You must mention a user.`
+              `Who are you trying to kick habibi? You must mention a user.`
             )
           }
           if (!member.kickable) {
-            return message.reply(`I can't kick this user. Sorry!`)
+            return message.reply(`I can't kick him habibi, don't waste my time again`)
           }
           return member
             .kick()
-            .then(() => message.reply(`${member.user.tag} was kicked.`))
+            .then(() => message.reply(`${member.user.tag} was removed for being too haram.`))
             .catch((error) => message.reply(`Sorry, an error occured.`))
-            
+
         }
       })
       
 
 })
 
-client.login(process.env.token)
+client.login("NzY2NDQyMTU2MTQ3MzQzMzYy.X4ja4Q.PFQTdLBempbK0JTpC7PjGTmpylQ")
