@@ -32,6 +32,7 @@ client.on('ready',  () => {
             .kick()
             .then(() => message.reply(`${member.user.tag} was kicked.`))
             .catch((error) => message.reply(`Sorry, an error occured.`))
+            
         }
       })
       
